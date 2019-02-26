@@ -6,5 +6,4 @@ RUN go install github.com/lwander/k8s-demo
 
 ADD ./content /content
 
-
 ENTRYPOINT /go/bin/k8s-demo
