@@ -1,10 +1,1 @@
-FROM golang
-
-ADD . /go/src/github.com/lwander/k8s-demo
-
-RUN go install github.com/lwander/k8s-demo
-
-ADD ./content /content
-
-
-ENTRYPOINT /go/bin/k8s-demo
+FROM k8s.gcr.io/k8s-dns-kube-dns:1.14.13
